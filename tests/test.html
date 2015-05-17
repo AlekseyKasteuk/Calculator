@@ -1,0 +1,31 @@
+<!DOCTYPE HTML>  
+<html>  
+  <head>
+    <title>Poland</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- testing frameworks -->
+    <link rel="stylesheet" href="lib/mocha.css">
+    <script src="lib/mocha.js"></script>
+    <script src="lib/chai.js"></script>
+    <script>
+      mocha.setup('bdd');
+      window.expect = chai.expect;
+      window.onload = function() {
+        mocha.run()
+      };
+    </script>
+
+    <!-- source files -->
+    <script src="../js/functions.js"></script>
+    <script src="../js/poland.js"></script>
+    <script src="../js/poland-make.js"></script>
+
+    <!-- tests -->
+    <script src="poland.spec.js"></script>
+
+  </head>
+  <body>
+    <div id="mocha"></div>
+  </body>
+</html>
